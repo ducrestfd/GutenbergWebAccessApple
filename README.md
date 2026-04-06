@@ -1,12 +1,4 @@
-//
-//  FormatTime.swift
-//  GutenbergWebAccess
-//
-//  Created by ducrestfd on 1/3/26.
-//
-
-/*
-Gutenberg Listen's raison d'être is to provide simple access to
+Gutenberg Web Access's raison d'être is to provide simple access to
 the Gutenberg Project website of 70,000 plus books to both
 sighted and blind users.  It is provided without charge under the
 agpl-3.0 license.
@@ -25,22 +17,3 @@ GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */
-
-import Foundation
-
-func formatTimeMillis(_ millis: Int) -> String {
-    let totalSeconds = max(0, millis) / 1000
-    let hours = totalSeconds / 3600
-    let minutes = (totalSeconds % 3600) / 60
-    let seconds = totalSeconds % 60
-
-    if hours > 0 {
-        // HH:MM:SS
-        return String(format: "%02d:%02d:%02d", hours, minutes, seconds)
-    } else {
-        // MM:SS
-        return String(format: "%02d:%02d", minutes, seconds)
-    }
-}
-

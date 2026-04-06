@@ -6,7 +6,7 @@
 //
 
 /*
-Gutenberg Web Access's raison d'être is to provide simple access to
+Gutenberg Listen's raison d'être is to provide simple access to
 the Gutenberg Project website of 70,000 plus books to both
 sighted and blind users.  It is provided without charge under the
 agpl-3.0 license.
@@ -48,12 +48,12 @@ struct Settings: View {
             // Header Content
             VStack(spacing: 4) {
                 
-                Text("Gutenberg Web Access!")
+                Text("Gutenberg Listen!")
                     .bold()
                 
                 Spacer().frame(height: 24)
                 
-                Text("Default speaking speed: \(readingSpeed, specifier: "%.2f")x")
+                Text("Default eBook speaking speed: \(readingSpeed, specifier: "%.2f")x")
                     .foregroundColor(Color.black) // Sets the text color to black
                     .bold()
                     .padding(.horizontal, 20)
@@ -81,7 +81,7 @@ struct Settings: View {
                 
                 
                 
-                Text("Default speaking pitch: \(readingPitch, specifier: "%.2f")x")
+                Text("Default eBook speaking pitch: \(readingPitch, specifier: "%.2f")x")
                     .foregroundColor(Color.black) // Sets the text color to black
                     .bold()
                     .padding(.horizontal, 20)
@@ -105,7 +105,7 @@ struct Settings: View {
                 
                 Spacer().frame(height: 24)
                 
-                Text("Default playing speed: \(playingSpeed, specifier: "%.2f")x")
+                Text("Default audiobook speed: \(playingSpeed, specifier: "%.2f")x")
                     .foregroundColor(Color.black) // Sets the text color to black
                     .bold()
                     .padding(.horizontal, 20)

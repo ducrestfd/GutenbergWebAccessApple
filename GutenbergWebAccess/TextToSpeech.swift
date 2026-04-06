@@ -6,7 +6,7 @@
 //
 
 /*
-Gutenberg Web Access's raison d'être is to provide simple access to
+Gutenberg Listen's raison d'être is to provide simple access to
 the Gutenberg Project website of 70,000 plus books to both
 sighted and blind users.  It is provided without charge under the
 agpl-3.0 license.
@@ -51,7 +51,7 @@ struct TextToSpeech: View {
         ScrollView {
             VStack {
 
-                Text("Gutenberg Web Access!")
+                Text("Gutenberg Listen!")
                     .bold()
 
                 Spacer(minLength: 12)
@@ -189,7 +189,9 @@ struct TextToSpeech: View {
                             .resizable()
                             .frame(width: 35, height: 35)
                             .foregroundColor(.blue)
+                            .accessibilityHidden(true)
                     }
+                    .accessibilityLabel("Jump backward 30 sentences")
                     
                     Button(action: {
                         speechManager.jumpBackward10Sentences()
@@ -198,7 +200,9 @@ struct TextToSpeech: View {
                             .resizable()
                             .frame(width: 35, height: 35)
                             .foregroundColor(.blue)
+                            .accessibilityHidden(true)
                     }
+                    .accessibilityLabel("Jump backward 10 sentences")
                     
                     Button(action: {
                         speechManager.jumpForward10Sentences()
@@ -207,7 +211,9 @@ struct TextToSpeech: View {
                             .resizable()
                             .frame(width: 35, height: 35)
                             .foregroundColor(.blue)
+                            .accessibilityHidden(true)
                     }
+                    .accessibilityLabel("Jump forward 10 sentences")
                     
                     Button(action: {
                         speechManager.jumpForward30Sentences()
@@ -216,7 +222,9 @@ struct TextToSpeech: View {
                             .resizable()
                             .frame(width: 35, height: 35)
                             .foregroundColor(.blue)
+                            .accessibilityHidden(true)
                     }
+                    .accessibilityLabel("Jump forward 30 sentences")
                     
                     
                     Button(action: {
@@ -226,8 +234,10 @@ struct TextToSpeech: View {
                             //.frame(width: 35, height: 35)
                             .bold()
                             .foregroundColor(.blue)
+                            .accessibilityHidden(true)
                     }
                 }
+                .accessibilityLabel("Jump forward 100 sentences")
                 
                 Divider()
 
@@ -242,7 +252,9 @@ struct TextToSpeech: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                             .foregroundColor(.blue)
+                            .accessibilityHidden(true)
                     }
+                    .accessibilityLabel("Decrease playback speed")
 
                     Text(String(format: "%.2f", speechManager.getRate()))
                         .bold()
@@ -254,7 +266,9 @@ struct TextToSpeech: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                             .foregroundColor(.blue)
+                            .accessibilityHidden(true)
                     }
+                    .accessibilityLabel("Increase playback speed")
                 }
 
 
@@ -269,7 +283,9 @@ struct TextToSpeech: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                             .foregroundColor(.blue)
+                            .accessibilityHidden(true)
                     }
+                    .accessibilityLabel("Lower pitch")
 
                     Text(String(format: "%.2f", speechManager.getPitch()))
                         .bold()
@@ -281,7 +297,9 @@ struct TextToSpeech: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                             .foregroundColor(.blue)
+                            .accessibilityHidden(true)
                     }
+                    .accessibilityLabel("Raise pitch")
                 }
             }
             .frame(width: 250)

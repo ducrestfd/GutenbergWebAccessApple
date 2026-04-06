@@ -6,7 +6,7 @@
 //
 
 /*
-Gutenberg Web Access's raison d'être is to provide simple access to
+Gutenberg Listen's raison d'être is to provide simple access to
 the Gutenberg Project website of 70,000 plus books to both
 sighted and blind users.  It is provided without charge under the
 agpl-3.0 license.
@@ -33,7 +33,7 @@ import SwiftData
 struct AboutView: View {
     
     let fullTextLicense =
-    "Gutenberg Web Access's raison  d'être is to provide simple access to " +
+    "Gutenberg Listen's raison d'être is to provide simple access to " +
     "the Project Gutenberg website of 70,000 plus books to blind " +
     "users or to anyone using a screen reader by providing a succinct " +
     "browsing experience (decluttered, to used the vernacular) to speed " +
@@ -59,6 +59,8 @@ struct AboutView: View {
     
     let updates =
     "\nUpdates:\n\n" +
+    "Renamed project Gutenberg Listen.\n" +
+    "Improved VoiceOver strings.\n" +
     "Fixed lock screen stop.\n" +
     "Fixed auto-language detection failure.\n" +
     "Set policy and accessibility links to show in light and dark modes.\n" +
@@ -120,11 +122,11 @@ struct AboutView: View {
         ScrollView {
             VStack {
                 
-                Text("Gutenberg Web Access!")
+                Text("Gutenberg Listen!")
                     .bold()
                     .font(.title)
                 
-                Text("Release date 2026-03-21 Beta Version 2.4")
+                Text("Release date 2026-04-23 version 2.5.2")
                     .font(.subheadline)
                     .italic()
                 

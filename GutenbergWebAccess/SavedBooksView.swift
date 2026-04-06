@@ -6,7 +6,7 @@
 //
 
 /*
-Gutenberg Web Access's raison d'être is to provide simple access to
+Gutenberg Listen's raison d'être is to provide simple access to
 the Gutenberg Project website of 70,000 plus books to both
 sighted and blind users.  It is provided without charge under the
 agpl-3.0 license.
@@ -45,12 +45,12 @@ struct SavedBooksView: View {
             // Header Content
             VStack(spacing: 4) {
 
-                Text("Gutenberg Web Access!")
+                Text("Gutenberg Listen!")
                     .bold()
 
                 Spacer(minLength: 24)
                 
-                Text("Saved Books")
+                Text("\(orderedFileLinks.count) Saved Books")
                     .bold()
 
                 List {

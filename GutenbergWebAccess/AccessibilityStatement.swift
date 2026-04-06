@@ -33,7 +33,7 @@ struct AccessibilityStatement: View {
         </head>
         <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><h2 class="western" style="line-height: 114%; margin-top: 0in; margin-bottom: 0.1in">
         <font face="Google Sans, sans-serif">Accessibility Statement:
-        Gutenberg Web Access</font></h2>
+        Gutenberg Listen</font></h2>
         <h3 class="western" style="line-height: 114%; margin-top: 0in; margin-bottom: 0.1in">
         <font face="Google Sans, sans-serif">Our Commitment</font></h3>
         <p style="line-height: 114%"><font face="Google Sans Text, sans-serif"><b>Gutenberg

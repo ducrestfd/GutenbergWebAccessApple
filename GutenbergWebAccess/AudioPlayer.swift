@@ -6,7 +6,7 @@
 //
 
 /*
-Gutenberg Web Access's raison d'être is to provide simple access to
+Gutenberg Listen's raison d'être is to provide simple access to
 the Gutenberg Project website of 70,000 plus books to both
 sighted and blind users.  It is provided without charge under the
 agpl-3.0 license.
@@ -65,6 +65,7 @@ struct AudioPlayer: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 50, height: 50)
                             .foregroundColor(.gray)
+                            .accessibilityHidden(true)
                     )
                     .padding(.vertical, 2)
 
@@ -84,7 +85,9 @@ struct AudioPlayer: View {
                     .resizable()
                     .frame(width: 80, height: 80)
                     .foregroundColor(.blue)
+                    .accessibilityHidden(true)
                 }
+                .accessibilityLabel("Play pause toggle")
                 .padding(.vertical, 30)
                 
                 Text("Time Remaining")
@@ -97,7 +100,9 @@ struct AudioPlayer: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                             .foregroundColor(.blue)
+                            .accessibilityHidden(true)
                     }
+                    .accessibilityLabel("Jump backward 60 seconds")
                                      
                     Text(viewModel.formatTime(viewModel.timeRemaining))
                         .frame(height: 50)
@@ -109,7 +114,9 @@ struct AudioPlayer: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                             .foregroundColor(.blue)
+                            .accessibilityHidden(true)
                     }
+                    .accessibilityLabel("Jump forward 300 seconds")
                 }
 
                 Text("Playback Speed")
@@ -123,7 +130,9 @@ struct AudioPlayer: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                             .foregroundColor(.blue)
+                            .accessibilityHidden(true)
                     }
+                    .accessibilityLabel("Decrease playback speed")
 
                     Text(String(format: "%.2f", viewModel.playbackRate))
 
@@ -134,7 +143,9 @@ struct AudioPlayer: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                             .foregroundColor(.blue)
+                            .accessibilityHidden(true)
                     }
+                    .accessibilityLabel("Increase playback speed")
                 }
 
                 VStack(spacing: 8) {

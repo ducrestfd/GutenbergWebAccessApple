@@ -31,11 +31,11 @@ struct PrivacyPolicy: View {
             </head>
             <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p style="line-height: 114%">
             <font face="Google Sans, sans-serif"><font size="6" style="font-size: 24pt"><b>Privacy
-            Policy for Gutenberg Web Access</b></font></font></p>
+            Policy for Gutenberg Listen</b></font></font></p>
             <p style="line-height: 114%"><font face="Google Sans Text, sans-serif"><b>Last
             Updated: February 4, 2026</b></font></p>
             <p style="line-height: 114%"><font face="Google Sans Text, sans-serif">Your
-            privacy is a priority. <b>Gutenberg Web Access</b> is designed to be
+            privacy is a priority. <b>Gutenberg Listen</b> is designed to be
             a private, secure tool for accessing public domain literature.</font></p>
             <h3 class="western" style="line-height: 114%; margin-top: 0in; margin-bottom: 0.1in">
             <font face="Google Sans, sans-serif">1. No Personal Data Collection</font></h3>
